@@ -1,0 +1,155 @@
+
+*{text-decoration: none;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    
+}
+.li{ list-style-type: none; /* Elimina las viñetas de la lista no ordenada */
+    padding-left: 0; /* Elimina la sangría predeterminada que el navegador aplica a las listas */
+    margin: 0; /* Elimina el margen externo para evitar espacios indeseados */}
+
+
+
+        /* encabezado Princuipal + buscador +  barra de nav */
+
+.encabezado{
+        background-color: rgb(219, 217, 215);
+        font-size: 1.2em;
+    }
+.encabezado_logo-empresa{
+    margin: 0em 4em 0em 0em;
+    width: 14em;
+    height: 7em;
+}
+
+/* Galeria Home productos */
+.home_productos{
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: space-around;
+}
+.texto_home_productos{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(223, 228, 228, 0.984);
+    margin: 0% 0% 0% 0%;
+    padding: 0.5em;  
+}
+.tarjeta{
+    width: 16em;
+    height: 16em;
+    background-color: white;
+}
+/* FIN Galeria Home productos */
+
+/* footer */
+.encabezado_footer{
+    gap: 5em;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(189, 180, 180);
+    width: 100%;
+    height: 3em;
+}
+.logo_redes_conteiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 8em;
+}
+
+.logo_redes{
+    width: 2em;
+    height: 2em;
+    margin-right: 0.7em;
+}
+
+.titulo_footer{
+font-size: 1.5rem;
+}
+.mapa{
+    width: 120px;
+    height: 100px;
+}
+.tamaño_mapa{
+    width: 100%;
+    height: 100%;
+}
+.conteiner_datos-contacto{
+    width: 100%;
+    height: 10em;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.datos_contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem;
+    color: white;
+    gap: 3em;
+}
+
+
+@media (min-width: 400px){
+    .encabezado {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .encabezado_contenedor-logo{
+        flex-direction: column;
+    }
+    .encabezado_logo-empresa{
+        width: 12em;
+        height: 6em;
+        margin: auto;
+        padding: 0%;
+    
+    }
+
+    /* Galeria Home productos */
+    .tarjeta{
+        width: 9em;
+        height: 7em;
+        background-color: white;
+    }
+    /* .inicio footer */
+    .encabezado_footer{
+        padding-top: 4em;
+        padding: 2.8em 1em 1em 1em;
+    flex-direction: column;
+    gap: 0;
+    font-size: .8em;
+    height: 8em;
+    }
+    .titulo_footer{
+        text-align: center;
+        font-size: 1.3em;
+    }
+    .conteiner_datos-contacto{
+        display: block;
+        height: 23em;
+    }
+    .datos-contacto{
+        flex-direction: row;
+    }
+
+}
