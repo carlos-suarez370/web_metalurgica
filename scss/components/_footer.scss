@@ -1,0 +1,110 @@
+/* ----------------PANTALLA MOVIL 400px---------- */
+
+@media (min-width: 400px){
+
+  /* .inicio footer */
+  .encabezado_footer{
+    background-color: rgb(189, 180, 180);
+    padding-top: 4em;
+    padding: 2.8em 1em 1em 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  font-size: .8em;
+  height: 8em;
+}
+.logo_redes{
+    width: 2em;
+    height: 2em;
+    margin-right: 0.7em;
+}
+.logo_redes_conteiner{
+   display: flex;
+}
+
+.titulo_footer{
+    text-align: center;
+    font-size: 1.3em;
+}
+.conteiner_datos-contacto{
+    background-color: black;
+    display: block;
+    height: 23em;
+}
+
+.datos_contacto{
+    display: flex;
+    align-items: center;
+
+    padding: 1rem;
+    color: white;
+    gap: 2em;
+}
+.mapa{
+width: 145px;
+height: 130px;
+}
+.tamaño_mapa{
+width: 100%;
+height: 100%;
+}
+
+}
+
+
+/* ----------------PANTALLA MOVIL 600px---------- */
+@media (min-width: 600px){
+
+}
+
+/* ----------------FIN PANTALLA MOVIL 600px---------- */
+
+
+/* ----------------PANTALLA MOVIL 1200px---------- */
+@media (min-width: 1200px){
+
+  .encabezado_footer{
+    gap: 5em;
+    flex-direction: row;
+    align-items: center;
+
+    width: 100%;
+    height: 3em;
+} 
+ .logo_redes_conteiner{
+    flex-direction: row;
+    justify-content: center;
+    width: 8em;
+} 
+
+
+
+ .titulo_footer{
+font-size: 1.5rem;
+} 
+
+
+.conteiner_datos-contacto{
+    width: 100%;
+    height: 10em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+} 
+
+ .datos_contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem;
+    color: white;
+    gap: 3em;
+} 
+}
+
+/* ----------------FIN PANTALLA MOVIL 1200px---------- */

@@ -1,37 +1,38 @@
-
-*{text-decoration: none;
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-    
-}
-.li{ list-style-type: none; /* Elimina las viñetas de la lista no ordenada */
-    padding-left: 0; /* Elimina la sangría predeterminada que el navegador aplica a las listas */
-    margin: 0; /* Elimina el margen externo para evitar espacios indeseados */}
-
-
-
-        /* encabezado Princuipal + buscador +  barra de nav */
-
-.encabezado{
-        background-color: rgb(219, 217, 215);
-        font-size: 1.2em;
-    }
-.encabezado_logo-empresa{
-    margin: 0em 4em 0em 0em;
-    width: 14em;
-    height: 7em;
+@charset "UTF-8";
+/* ----------------aclaraciones css---------- */
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
 }
 
-/* Galeria Home productos */
-.home_productos{
-    background-color: aqua;
+ul,
+ol {
+  list-style: none;
+}
+
+.li {
+  list-style-type: none; /* Elimina las viñetas de la lista no ordenada */
+  padding-left: 0; /* Elimina la sangría predeterminada que el navegador aplica a las listas */
+  margin: 0; /* Elimina el margen externo para evitar espacios indeseados */
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ----------------PANTALLA MOVIL 400px---------- */
+@media (min-width: 400px) {
+  /* Galeria Home productos */
+  .home_productos {
+    background-color: rgb(170, 235, 235);
     display: flex;
     flex-wrap: wrap;
     gap: 2em;
     justify-content: space-around;
-}
-.texto_home_productos{
+    padding: 0em 0em 2.5em 0em;
+  }
+  .texto_home_productos {
     display: flex;
     width: 100%;
     height: 100%;
@@ -39,117 +40,204 @@
     align-items: center;
     background-color: rgba(223, 228, 228, 0.984);
     margin: 0% 0% 0% 0%;
-    padding: 0.5em;  
+    padding: 0.5em;
+  }
+  .tarjeta {
+    width: 9em;
+    height: 7em;
+    background-color: white;
+  }
+  .tarjeta img {
+    width: 100%; /* Ajusta el tamaño del contenedor */
+    height: 100%; /* Ajusta el tamaño del contenedor */
+    overflow: hidden; /* Esconde cualquier exceso */
+  }
 }
-.tarjeta{
+/* ----------------FIN  PANTALLA MOVIL 400px---------- */
+/* ----------------PANTALLA MOVIL 600px---------- */
+/* ----------------FIN PANTALLA MOVIL 600px---------- */
+/* ----------------PANTALLA MOVIL 1200px---------- */
+@media (min-width: 1200px) {
+  .tarjeta {
     width: 16em;
     height: 16em;
     background-color: white;
+  }
 }
-/* FIN Galeria Home productos */
-
-/* footer */
-.encabezado_footer{
-    gap: 5em;
-
+/* ----------------FIN PANTALLA MOVIL 1200px---------- */
+/* ----------------PANTALLA MOVIL 600px---------- */
+/* ----------------FIN PANTALLA MOVIL 600px---------- */
+/* ----------------PANTALLA MOVIL 1200px---------- */
+/* ----------------FIN PANTALLA MOVIL 1200px---------- */
+/* ----------------PANTALLA MOVIL 600px---------- */
+/* ----------------FIN PANTALLA MOVIL 600px---------- */
+/* ----------------PANTALLA MOVIL 1200px---------- */
+/* ----------------FIN PANTALLA MOVIL 1200px---------- */
+/* ----------------PANTALLA MOVIL 600px---------- */
+/* ----------------FIN PANTALLA MOVIL 600px---------- */
+/* ----------------PANTALLA MOVIL 1200px---------- */
+/* ----------------FIN PANTALLA MOVIL 1200px---------- */
+/* ----------------PANTALLA MOVIL 400px---------- */
+@media (min-width: 400px) {
+  /* ---------LOGO DE LA EMPRES__Y BUSCADOR------------- */
+  .encabezado {
+    font-size: 1.2em;
+    background-color: rgb(219, 217, 215);
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .encabezado_logo-empresa {
+    width: 12em;
+    height: 6em;
+    margin: auto;
+    padding: 0%;
+  }
+  .buscador {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 0.85em;
+    margin: 0.75em;
+  }
+  /* ---------FIN LOGO DE LA EMPRES__Y BUSCADOR------------- */
+  /* menu hamburguesa */
+  .navbar {
+    padding: 0%;
+    background-color: red;
+  }
+  .navbar .container-fluid {
+    display: flex;
+    justify-content: center;
+    background-color: red;
+  }
+  .navbar-toggler {
+    background-color: rgb(161, 159, 156);
+  }
+  /* fin menu hamburguesa */
+}
+/* ----------------FIN  PANTALLA MOVIL 400px --------- */
+/* ----------------PANTALLA  600px---------- */
+/* ----------------FIN  PANTALLA  600px---------- */
+/* ----------------PANTALLA  1200px---------- */
+@media (min-width: 1200px) {
+  /* ---------LOGO DE LA EMPRES__Y BUSCADOR------------- */
+  .encabezado {
     flex-direction: row;
+    gap: 5em;
+  }
+  .encabezado_logo-empresa {
+    margin: 0em 4em 0em 0em;
+    width: 14em;
+    height: 6em;
+  }
+  .buscador {
+    font-size: 1em;
+  }
+  /* ---------fin  LOGO DE LA EMPRES__Y BUSCADOR------------- */
+  /* ---------barra de navegacion------------- */
+  .container-fluid {
+    width: 50%;
+  }
+  .navbar-collapse {
+    flex-grow: 0;
+    font-size: 1.3em;
+    background-color: rgb(170, 167, 163);
+    margin: 0.5em;
+  }
+  .navbar-expand-lg .navbar-nav {
+    gap: 1.3em;
+  }
+  /* ---------FIN  barra de navegacion------------- */
+}
+/* ----------------fin PANTALLA  1200px---------- */
+/* ----------------PANTALLA MOVIL 400px---------- */
+@media (min-width: 400px) {
+  /* .inicio footer */
+  .encabezado_footer {
+    background-color: rgb(189, 180, 180);
+    padding-top: 4em;
+    padding: 2.8em 1em 1em 1em;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    background-color: rgb(189, 180, 180);
-    width: 100%;
-    height: 3em;
-}
-.logo_redes_conteiner{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 8em;
-}
-
-.logo_redes{
+    gap: 0;
+    font-size: 0.8em;
+    height: 8em;
+  }
+  .logo_redes {
     width: 2em;
     height: 2em;
     margin-right: 0.7em;
-}
-
-.titulo_footer{
-font-size: 1.5rem;
-}
-.mapa{
-    width: 120px;
-    height: 100px;
-}
-.tamaño_mapa{
+  }
+  .logo_redes_conteiner {
+    display: flex;
+  }
+  .titulo_footer {
+    text-align: center;
+    font-size: 1.3em;
+  }
+  .conteiner_datos-contacto {
+    background-color: black;
+    display: block;
+    height: 23em;
+  }
+  .datos_contacto {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    color: white;
+    gap: 2em;
+  }
+  .mapa {
+    width: 145px;
+    height: 130px;
+  }
+  .tamaño_mapa {
     width: 100%;
     height: 100%;
+  }
 }
-.conteiner_datos-contacto{
+/* ----------------PANTALLA MOVIL 600px---------- */
+/* ----------------FIN PANTALLA MOVIL 600px---------- */
+/* ----------------PANTALLA MOVIL 1200px---------- */
+@media (min-width: 1200px) {
+  .encabezado_footer {
+    gap: 5em;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 3em;
+  }
+  .logo_redes_conteiner {
+    flex-direction: row;
+    justify-content: center;
+    width: 8em;
+  }
+  .titulo_footer {
+    font-size: 1.5rem;
+  }
+  .conteiner_datos-contacto {
     width: 100%;
     height: 10em;
-    background-color: black;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
-
-.datos_contacto{
+  }
+  .datos_contacto {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
     padding: 1rem;
     color: white;
     gap: 3em;
+  }
 }
+/* ----------------FIN PANTALLA MOVIL 1200px---------- */
 
-
-@media (min-width: 400px){
-    .encabezado {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-    }
-    .encabezado_contenedor-logo{
-        flex-direction: column;
-    }
-    .encabezado_logo-empresa{
-        width: 12em;
-        height: 6em;
-        margin: auto;
-        padding: 0%;
-    
-    }
-
-    /* Galeria Home productos */
-    .tarjeta{
-        width: 9em;
-        height: 7em;
-        background-color: white;
-    }
-    /* .inicio footer */
-    .encabezado_footer{
-        padding-top: 4em;
-        padding: 2.8em 1em 1em 1em;
-    flex-direction: column;
-    gap: 0;
-    font-size: .8em;
-    height: 8em;
-    }
-    .titulo_footer{
-        text-align: center;
-        font-size: 1.3em;
-    }
-    .conteiner_datos-contacto{
-        display: block;
-        height: 23em;
-    }
-    .datos-contacto{
-        flex-direction: row;
-    }
-
-}
+/*# sourceMappingURL=styles.css.map */

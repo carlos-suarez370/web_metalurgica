@@ -1,0 +1,110 @@
+
+/* ----------------PANTALLA MOVIL 400px---------- */
+@media (min-width: 400px){
+    
+    /* ---------LOGO DE LA EMPRES__Y BUSCADOR------------- */
+
+    .encabezado {
+        font-size: 1.2em;
+        background-color: rgb(219, 217, 215);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+
+    }
+
+    .encabezado_logo-empresa{
+        width: 12em;
+        height: 6em;
+        margin: auto;
+        padding: 0%;
+
+    }
+    .buscador{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        font-size: .85em;
+        margin: .75em;
+    }
+
+    /* ---------FIN LOGO DE LA EMPRES__Y BUSCADOR------------- */
+
+
+                 /* menu hamburguesa */
+  .navbar {
+    padding: 0%;
+    background-color: red;
+ }
+ .navbar  .container-fluid {
+     display: flex;
+     justify-content: center;
+     background-color: red;
+
+ }
+ .navbar-toggler{
+     background-color: rgb(161, 159, 156);
+ }
+           /* fin menu hamburguesa */
+
+}
+
+/* ----------------FIN  PANTALLA MOVIL 400px --------- */
+
+/* ----------------PANTALLA  600px---------- */
+
+@media (min-width: 600px) {
+
+
+
+}
+
+/* ----------------FIN  PANTALLA  600px---------- */
+
+/* ----------------PANTALLA  1200px---------- */
+
+@media (min-width: 1200px) {
+
+    /* ---------LOGO DE LA EMPRES__Y BUSCADOR------------- */
+
+    .encabezado{
+        flex-direction: row;
+        gap: 5em;
+        }
+        
+         .encabezado_logo-empresa{
+            margin: 0em 4em 0em 0em;
+            width: 14em;
+            height: 6em;
+        } 
+        .buscador{
+            font-size: 1em;
+        }
+        /* ---------fin  LOGO DE LA EMPRES__Y BUSCADOR------------- */
+
+            
+
+        /* ---------barra de navegacion------------- */
+        .container-fluid{
+            width: 50%;
+        }
+        .navbar-collapse{
+            flex-grow: 0;
+             font-size: 1.3em;  
+             background-color: rgb(170, 167, 163);
+             margin: .5em;
+        }
+        .navbar-expand-lg .navbar-nav{
+            gap: 1.3em;
+        }
+
+        /* ---------FIN  barra de navegacion------------- */
+
+
+
+}
+
+/* ----------------fin PANTALLA  1200px---------- */
+
