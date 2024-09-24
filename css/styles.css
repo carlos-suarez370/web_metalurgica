@@ -21,6 +21,63 @@ a {
   text-decoration: none;
 }
 
+/* ----------------section contacto PANTALLA 400PX -------------- */
+/* ------------------consultas-------------- */
+@media (min-width: 400px) {
+  .portada__principal-contenedor {
+    background-color: rgba(173, 188, 188, 0.295);
+  }
+  .texto__contacto {
+    padding: 0% 1em 1em 1em;
+  }
+  .titulo__contacto {
+    background-image: url(/img/hombre_soldando_guantes.jfif);
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 2.5em;
+    padding: 1em;
+  }
+  /* --------------------texto consulta------------------- */
+  .consultas {
+    color: red;
+  }
+  .contenido__consultas {
+    font-size: 0.9em;
+  }
+  .spam__consultas {
+    font-size: 0.9em;
+  }
+  /* ------------------fin consultas-------------- */
+}
+/* ----------------PANTALLA MOVIL 600px---------- */
+/* ----------------FIN PANTALLA MOVIL 600px---------- */
+/* ----------------PANTALLA MOVIL 1200px---------- */
+@media (min-width: 1200px) {
+  .titulo__contacto {
+    font-size: 4rem;
+  }
+  .formulario_consultas {
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+    margin-block-end: 4.3em;
+  }
+  .sub-titulo__consultas {
+    color: red;
+  }
+  .texto-video {
+    width: 14em;
+    height: 12em;
+  }
+  .contenedor__video-consultas {
+    width: 40%;
+  }
+}
+/* ----------------FIN PANTALLA MOVIL 1200px---------- */
 /* ----------------PANTALLA MOVIL 400px---------- */
 @media (min-width: 400px) {
   /* Galeria Home productos */
