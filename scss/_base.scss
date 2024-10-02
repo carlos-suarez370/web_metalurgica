@@ -23,13 +23,13 @@ a {
 
 // variables
 //encabezado
-$color-encabezado:rgb(220, 220, 224);
+$color-encabezado:rgb(231, 223, 228);
 
 $color-galeria-productos:white;
 
 
 //barra de nav
-$color__nav: rgb(198, 198, 202);
+$color__nav: rgb(231, 223, 228);
 
 
 //footer
@@ -40,10 +40,8 @@ $color__border-solid: chocolate;
 // variables
 
 // mixin
-@mixin btn_card-productos{ 
+@mixin btn_nav-encabezado{ 
     text-decoration: none;
-    padding: 8px 10px;
-    display: block;
     transition: background-color 1s ease, color 1s ease;
     border-radius: 6px;
 }

@@ -95,7 +95,7 @@ a {
     height: 100%;
     justify-content: center;
     align-items: center;
-    background-color: rgba(223, 228, 228, 0.984);
+    background-color: rgba(228, 223, 223, 0.984);
     margin: 0% 0% 0% 0%;
     padding: 0.5em;
   }
@@ -277,7 +277,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(220, 220, 224);
+    background-color: rgb(231, 223, 228);
   }
 }
 /* ----------------FIN PANTALLA MOVIL 600px---------- */
@@ -288,7 +288,7 @@ a {
   /* ---------LOGO DE LA EMPRES__Y BUSCADOR------------- */
   .encabezado {
     font-size: 1em;
-    background-color: rgb(220, 220, 224);
+    background-color: rgb(231, 223, 228);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -318,12 +318,12 @@ a {
   /* menu hamburguesa */
   .navbar {
     padding: 0%;
-    background-color: rgb(198, 198, 202);
+    background-color: rgb(231, 223, 228);
   }
   .navbar .container-fluid {
     display: flex;
     justify-content: center;
-    background-color: rgb(198, 198, 202);
+    background-color: rgb(231, 223, 228);
   }
   .navbar-toggler {
     background-color: rgb(161, 159, 156);
@@ -341,13 +341,14 @@ a {
   /* ---------LOGO DE LA EMPRES__Y BUSCADOR------------- */
   .encabezado {
     flex-direction: row;
-    gap: 5em;
-    background-color: rgb(220, 220, 224);
+    gap: 11em;
+    background-color: rgb(231, 223, 228);
+    height: 6.6em;
   }
   .encabezado_logo-empresa {
     margin: 0em 4em 0em 0em;
-    width: 14em;
-    height: 6em;
+    width: 16em;
+    height: 6.5em;
   }
   .buscador {
     font-size: 1em;
@@ -355,6 +356,7 @@ a {
     gap: 2em;
     align-items: center;
     color: rgb(92, 89, 89);
+    margin: 0.3em 6em 0em 0em;
   }
   .buscador .numero_telefono {
     display: flex;
@@ -366,25 +368,32 @@ a {
     height: 1em;
   }
   /* ---------fin  LOGO DE LA EMPRES__Y BUSCADOR------------- */
+  .logo_carrito {
+    display: flex;
+    width: 2em;
+    height: 2em;
+  }
+  .navbar .container-fluid {
+    margin: 0em 0em 0em 4em;
+  }
   /* ---------barra de navegacion------------- */
   .container-fluid {
-    width: 50%;
+    height: 3.6em;
   }
   .navbar-collapse {
     flex-grow: 0;
-    font-size: 1.4em;
-    background-color: rgb(198, 198, 202);
+    font-size: 1.2em;
+    background-color: rgb(231, 223, 228);
     margin: 0.5em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 545; /* Semi-negrita o más gruesa */
   }
   .navbar-expand-lg .navbar-nav {
-    gap: 1.3em;
-    transition: background-color 5s ease, color 4s ease;
+    gap: 1.6em;
   }
   .navbar-expand-lg .navbar-nav :hover {
-    background-color: rgb(172, 140, 148);
+    background-color: rgb(179, 72, 72);
     text-decoration: none;
-    padding: 8px 10px;
-    display: block;
     transition: background-color 1s ease, color 1s ease;
     border-radius: 6px;
   }
@@ -419,7 +428,7 @@ a {
     font-size: 1.3em;
   }
   .conteiner_datos-contacto {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     display: block;
     height: 23em;
   }

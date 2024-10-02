@@ -80,14 +80,15 @@
 
     .encabezado{
         flex-direction: row;
-        gap: 5em;
+        gap: 11em;
         background-color: $color-encabezado;
+        height: 6.6em;
         }
         
          .encabezado_logo-empresa{
             margin: 0em 4em 0em 0em;
-            width: 14em;
-            height: 6em;
+            width: 16em;
+            height: 6.5em;
         } 
         .buscador{
             font-size: 1em;
@@ -95,6 +96,8 @@
             gap: 2em;
             align-items: center;
             color: rgb(92, 89, 89);
+            margin: 0.3em 6em 0em 0em;
+        
 
             .numero_telefono{
                 display: flex;
@@ -108,29 +111,40 @@
                 width: 1em;
                 height: 1em;
             }
+            
         }
         /* ---------fin  LOGO DE LA EMPRES__Y BUSCADOR------------- */
-
+        .logo_carrito{
+            display: flex;
+            width: 2em;
+            height: 2em;
+            
+        }
+        .navbar .container-fluid{
+            margin: 0em 0em 0em 4em ;
+        }
             
 
         /* ---------barra de navegacion------------- */
         .container-fluid{
-            width: 50%;
+            height: 3.6em;
         }
         .navbar-collapse{
             flex-grow: 0;
-             font-size: 1.4em;  
+             font-size: 1.2em;  
              background-color: $color__nav;
              margin: .5em;
+             font-family: 'Poppins', sans-serif;
+             font-weight: 545; /* Semi-negrita o más gruesa */
+
+
         }
         .navbar-expand-lg .navbar-nav{
-            gap: 1.3em;
-            transition: background-color 5s ease, color 4s ease;
-           
+            gap: 1.6em;           
         }
         .navbar-expand-lg .navbar-nav :hover{
-            background-color: rgb(172, 140, 148);
-            @include btn_card-productos
+            background-color: rgb(179, 72, 72);
+            @include btn_nav-encabezado
         }
         
         
