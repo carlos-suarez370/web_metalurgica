@@ -1,15 +1,158 @@
-/* ----------------PANTALLA MOVIL 600px---------- */
-@media (min-width: 600px){
 
-}
-
-/* ----------------FIN PANTALLA MOVIL 600px---------- */
-
-
-/* ----------------PANTALLA MOVIL 1200px---------- */
-@media (min-width: 1200px){
-
+@media (min-width: 400px) {
+    .container__nosotros {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .titulo__nosotros {
+        padding: 0.55em;
+        margin: 0%;
+        background-color: brown;
+        font-size: 1.5em;
+        color: rgb(239, 216, 216);
+    }
+    .img-principal__nosotros {
+        background-image: url(/imagenes/html_quienes-somos/valores2.jpg);
+        background-position: center;
+        background-size: cover;
     
-}
-
-/* ----------------FIN PANTALLA MOVIL 1200px---------- */
+        height: 220px;
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-size: 2.5em;
+        padding: 1em;
+    }
+    /* --------------fin img y titulo----------- */
+    /* --------------quienes somos----------- */
+    .quienes-somos {
+        padding: 0.5em;
+        background-color: rgba(245, 245, 220, 0.582);
+    }
+    /* --------------fin quienes somos----------- */
+    
+    /* --------------niños----------- */
+    .contenedor__img-niños{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .img-niños {
+        background-image: url(/imagenes/html_quienes-somos/niños.jpg) ;
+        background-position: center;
+        background-size: cover;
+    
+        width: 100%;
+        height: 17em;
+    
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+    .texto__niños {
+        background-color: rgba(137, 43, 226, 0.669);
+        width: 16em;
+        text-align: center;
+        height: 3.5em;
+        color: rgb(189, 189, 189);
+        border-radius: 0.6em;
+    }
+    .img-niño-albañil {
+        background-image: url(/imagenes/html_quienes-somos/rem__niñoestudiao.jpg);
+        background-position: center;
+        background-size: cover;
+    
+        width: 100%;
+        height: 17em;
+    
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+    /* -------------- fin niños----------- */
+    
+    /* --------------------nuestra empresa------------------ */
+    .nuestra-empresa {
+        background-color: rgba(245, 245, 220, 0.582);
+        padding: 1em;
+    }
+    }
+    /* --------------------fin nuestra empresa------------------ */
+    /* ----------------------fin section nosotros pantalla 350px----------- */
+    
+    /* ----------------------section nosotros pantalla 600px----------- */
+    @media (min-width: 600px) {
+        .img-principal__nosotros {
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 8em;
+            display: flex;
+            justify-content: center;
+            color: white;
+            font-size: 2.5em;
+            padding: 1em;
+        }
+             .img-niños {
+            width: 100%;
+            height: 20em;
+        
+            display: flex;
+            justify-content: center;     
+               align-items: end;    }
+       .img-niño-albañil {
+            width: 100%;
+           height: 20em;
+       }
+        .texto__niños {
+            background-color: rgba(137, 43, 226, 0.669);
+            width: 13em;
+            text-align: center;
+            height: 4.5em;
+            color: rgb(189, 189, 189);
+            border-radius: 0.6em;
+        }
+    }
+    /* ----------------------fin section nosotros pantalla 600px----------- */
+    /* ----------------------fin section nosotros pantalla 1200px----------- */
+    @media (min-width: 1200px) {
+        .img-principal__nosotros {
+    
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-color: white;
+            height: 11em;
+            border: solid 0px;
+            font-size: 1.6em;
+            padding: 0%;
+        }
+        .img-niños {
+            background-position: center;
+            background-size: cover;
+            width: 50%;
+            height: 30em;
+        }
+        .texto__niños {
+            background-color: rgba(137, 43, 226, 0.669);
+            width: 16em;
+            text-align: center;
+            height: 3.5em;
+            color: rgb(189, 189, 189);
+            border-radius: 0.6em;
+        }
+        
+        .img-niño-albañil {
+            width: 50%;
+            height: 30em;
+        }
+    
+        .contenedor__img-niños {
+            display: flex;
+            flex-direction: row;
+        }
+        .bandera-arg {
+         background-color: rgb(60, 143, 198);
+         width: 100%;
+         height: 2em;
+        }
+    }

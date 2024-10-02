@@ -1,5 +1,17 @@
+
+@media (min-width: 400px){
+
+}
+
+
 /* ----------------PANTALLA MOVIL 600px---------- */
-@media (min-width: 600px){
+@media (min-width: 400px){
+    .titulo_servicios{
+        @include centrar_elementos_flex;
+        background-color: $color-encabezado;
+
+
+    }
 
 }
 

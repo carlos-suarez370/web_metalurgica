@@ -11,52 +11,63 @@
 
 <!-- encabezado principal -->
 <header class="sticky-top">
-          <!-- barra de navegacion  -->
-          <nav class="navbar navbar-expand-lg navbar-light  encabezado ">
-            <div class="container-fluid">
-              <a class="navbar-brand" href=""> <img class="encabezado_logo-empresa" src="../img/logo_empresa.png" alt="logo" > </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./servicios.html">Servicios</a>
-                  </li>
-                  <li class="nav-item"></li>
-                    <a class="nav-link" href="./productos.html">Productos</a>
-                  </li>
-                  <!-- <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="./pages/productos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Productos
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Acero Inoxidable</a></li>
-                      <li><a class="dropdown-item" href="#">Galbanizados </a></li>
-                      <li><a class="dropdown-item" href="#">Mobiliarios</a></li>
-                    </ul>
-                  </li> -->
-                  <li class="nav-item">
-                    <a class="nav-link" href="./contacto.html">contacto</a>
-                  </li>
-                  <li class="nav-item"></li>
-                    <a class="nav-link" href="./nosotros.html">Nosotros</a>
-                  
-                </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Productos" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
-              </div>
-            </div>
-          </nav>
+  <section class="encabezado">
+   <img src="../img/logo_empresa.png" class="encabezado_logo-empresa" alt="logo_empresa">
+
+   <!-- formulario buscador -->
+    <section class="container_buscador">
+   <div class="buscador">
+     <span class="numero_telefono"> <img class="logo_telefono" src="../img/telephone-handle-silhouette.png" alt="logo_telefono">(+54) 9 11 6694-7239</span>
+     <form class="d-flex" role="search">
+       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+       <button class="btn btn-outline-success" type="submit">Search</button>
+     </form> 
+   </div> 
+   <div class="buscador">
+      <!-- barra de navegacion  -->
+      <nav class="navbar navbar-expand-lg navbar-light   ">
+       <div class="container-fluid  ">
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+             <li class="nav-item">
+               <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="./servicios.html">Servicios</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="./productos.html">Productos</a>
+             </li>
             
-            <!-- FIN barra de navegacion -->
-        <!-- FIN  encabezado principal -->
+             <li class="nav-item">
+               <a class="nav-link" href="./contacto.html">Contacto</a>
+             </li>
+                <li>
+               <a class="nav-link" href="./nosotros.html">Nosotros</a>
+             </li>
+           </ul>
+         </div>
+       </div>
+     </nav>
+       
+       <!-- FIN barra de navegacion -->
+   <!-- FIN  encabezado principal -->
+
+   </div> 
+ </section>
+   
+      
+     </div>
+   </nav>
+ </section>
+
+ 
+
     
+   
 </header>
 
     <!-- FIN  encabezado principal -->
@@ -64,13 +75,108 @@
 
     <!--  Contenido principal de la página  -->
 <main>
-   <section class="contenedor_galeria_productos">
-    <h4>    quienes somos</h4>
-    <div class="galeria_productos">
-        
-    </div>
+  
+  <section class="container__nosotros">
+    <h1 class="titulo__nosotros">Nuestra Historia</h1>
+   <!-- animacion -->
+    <div class="contenedor__animacion-padre" >
+
+<div class="contenedor__animacion-nosotros">
+<figure >
+  <img src="/imagenes/animaciones/camion 2.jpg" alt="camion">
+  <div class="capa2">
+  <h3>Año 1979</h3> 
+  <p>Orgullosos de nuestros origenes En la imagen se encuentra Luis José León Fundador con Cristobal Lopez nuestros FUNDADORES</p>
+</div>
+
+</figure>
+
+</div>
+
+<!-- animacion  -->
+
+
+
+ <!-- animacion -->
+<div class="contenedor__animacion-nosotros">
+<figure >
+  <img src="/imagenes/animaciones/hombre2.jpg" alt="fundador">
+  <div class="capa2">
+  <h3> Año 1973</h3> 
+  <p>Luis José León en lo que seria la primer sucursal, ubicada en av Santa Fe 1544</p>
+</div>
+
+</figure>
+
+</div>
+</div>
+<!-- animacion -->
+
+
+
+
+
+    <div class="img-principal__nosotros"></div>
+  </section>
+
+
+ 
+    
+
  
 
+  <section class="quienes-somos">
+    <h2 class="subtitulo__quienes-somos">¿Quienes somos?</h2>
+    <p>Somos mas que solo un proveedor de materiales, Somos una empresa que en sus inicios comenzo como un
+      emprendimimiento familiar
+      y a lo largo del tiempo nos fuimos consolidando en el rubro, llegando a ser unos de los grandes distribuidores a
+      nivel nacional.
+    </p>
+    <p>
+      Nos enorgullese ser <strong>Argentinos</strong>, creemos en nuestro potencial, por eso parte de nuestras
+      ganancias lo donamos a la fundacion <a href="https://www.unicef.org/argentina/">unicef.argentina</a> para los
+      niños
+      que costruiran la <strong>Argentina que queremos!</strong>
+    </p>
+  </section>
+
+  <div class="bandera-arg"></div>
+  <section class="contenedor__img-niños">
+
+    <div class="img-niños">
+      <p class="texto__niños"> Promovemos los derechos de los niños, niñas y adolescentes.</p>
+
+    </div>
+
+    <div class="img-niño-albañil">
+      <p class="texto__niños"> Que la unica obligacion de los niños sea crecer y no el trabajo!</p>
+
+    </div>
+  </section>
+  <div class="bandera-arg"></div>
+
+  <section class="nuestra-empresa">
+    <h5> Nuestra Empresa </h5>
+    <p>Hace 55 años Luis José León, técnico mecánico de Cementos Samper, en busca de un ingreso extra para su familia
+      decidio emprender y empezo solo con el reparto de Cementos, con el tiempo se fue expandiendo gracias al apoyo de
+      toda su numerosa familia (sus primeros invercionistas) . Aunque los primeros meses no fueron exitosos, siguieron
+      intentando hasta llegar hacer una de las empresas mas influyentes en el rubro.</p>
+
+
+    <h5> Nuestra visíon</h5>
+    <p>Ser una empresa de vanguardia y de innovación, líder en Argentina y con intenciones de seguir expandiendonos a
+      nivel regional e internacional.</p>
+
+
+    <h5> Nuestra Misión</h5>
+    <p>Existen muchas empresas de distribuidoras de materiales en todo el mundo, pero nuestra misión se distingue del
+      resto
+      ya que esta va más allá de satisfacer las nesecidades de los clientes y crecer como empresa, ya que se centra en
+      dar las mismas oportunidades a cada Argentino, atraves de donaciones y campañas solidarias conoce mas <a
+        href="https://www.unicef.org/argentina/">aqui.</a>
+    </p>
+
+  </section>
     
    </section>
 
