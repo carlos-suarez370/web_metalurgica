@@ -34,6 +34,7 @@ a {
     background-image: url(/img/professional-industrial-welder-welding-metal-parts-metalworking-factory.jpg);
     background-position: center;
     background-size: cover;
+    display: none;
     height: 250px;
     display: flex;
     justify-content: center;
