@@ -122,6 +122,8 @@ a {
   }
 }
 /* ----------------FIN PANTALLA MOVIL 1200px---------- */
+/* ----------------------section nosotros pantalla 350px----------- */
+/* --------------img y titulo----------- */
 @media (min-width: 400px) {
   .container__nosotros {
     display: flex;
@@ -136,7 +138,7 @@ a {
     color: rgb(239, 216, 216);
   }
   .img-principal__nosotros {
-    background-image: url(/imagenes/html_quienes-somos/valores2.jpg);
+    background-image: url(/img/img_nosotros/creadores.jpg);
     background-position: center;
     background-size: cover;
     height: 220px;
@@ -267,6 +269,7 @@ a {
     height: 2em;
   }
 }
+/* ----------------------fin section nosotros pantalla 1200px----------- */
 /* ----------------PANTALLA MOVIL 600px---------- */
 /* ----------------FIN PANTALLA MOVIL 600px---------- */
 /* ----------------PANTALLA MOVIL 1200px---------- */
@@ -486,5 +489,71 @@ a {
   }
 }
 /* ----------------FIN PANTALLA MOVIL 1200px---------- */
+@media (min-width: 400px) {
+  .contenedor__animacion-nosotros {
+    width: 100%;
+    height: 10wh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+  }
+  .contenedor__animacion-nosotros figure {
+    position: relative;
+    height: 200px;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+  .contenedor__animacion-nosotros figure img {
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+  }
+  .capa2 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(117, 132, 136, 0.6);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+  }
+  .capa2__h3 {
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: auto;
+  }
+  .capa2__p {
+    color: #fff;
+  }
+  .contenedor__animacion-nosotros figure:hover > .capa2 {
+    opacity: 1;
+    visibility: visible;
+  }
+  .contenedor__animacion-nosotros figure:hover > .capa2 h3 {
+    margin-top: 70px;
+    margin-bottom: 15px;
+  }
+  .contenedor__animacion-nosotros figure:hover > img {
+    transform: scale(1.3);
+  }
+  .contenedor__animacion-padre {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 1200px) {
+  .contenedor__animacion-padre {
+    flex-direction: row;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */

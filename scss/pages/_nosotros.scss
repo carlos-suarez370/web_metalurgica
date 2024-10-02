@@ -1,4 +1,7 @@
 
+/* ----------------------section nosotros pantalla 350px----------- */
+/* --------------img y titulo----------- */
+
 @media (min-width: 400px) {
     .container__nosotros {
         display: flex;
@@ -13,7 +16,7 @@
         color: rgb(239, 216, 216);
     }
     .img-principal__nosotros {
-        background-image: url(/imagenes/html_quienes-somos/valores2.jpg);
+        background-image: url(/img/img_nosotros/creadores.jpg);
         background-position: center;
         background-size: cover;
     
@@ -116,6 +119,8 @@
     /* ----------------------fin section nosotros pantalla 600px----------- */
     /* ----------------------fin section nosotros pantalla 1200px----------- */
     @media (min-width: 1200px) {
+    
+        
         .img-principal__nosotros {
     
             background-size: contain;
@@ -156,3 +161,23 @@
          height: 2em;
         }
     }
+    //  .prueva{
+    //     display: flex;
+    //     width: 900px;
+    //     height: 430px;
+    //  }
+    // .img__prueva{
+    // width: 0px;
+    // flex-grow: 1;
+    // object-fit: cover;
+    // opacity: 8;
+    // transition: 5s ease ;
+    // }
+    // .img__prueva:hover{
+    // cursor: crosshair;
+    // width: 300px;
+    // opacity: 1;
+    // filter: contrast(120%);
+    // }
+    
+    /* ----------------------fin section nosotros pantalla 1200px----------- */
