@@ -56,8 +56,17 @@
  .navbar-light .navbar-nav .nav-link {
     color: black;
 }
-           /* fin menu hamburguesa */
+.logo_carrito{
+    display: none;
+}
 
+.navbar-expand-lg .navbar-nav{
+    gap: 1em; 
+    &:hover{
+    @include btn_nav-encabezado;
+    }          
+}
+           /* fin menu hamburguesa */
 }
 
 /* ----------------FIN  PANTALLA MOVIL 400px --------- */
@@ -98,7 +107,6 @@
             color: rgb(92, 89, 89);
             margin: 0.3em 6em 0em 0em;
         
-
             .numero_telefono{
                 display: flex;
                 align-items: center;
@@ -144,15 +152,10 @@
         }
         .navbar-expand-lg .navbar-nav :hover{
             background-color: rgb(179, 72, 72);
-            @include btn_nav-encabezado
+            @include btn_nav-encabezado;
         }
         
-        
-
         /* ---------FIN  barra de navegacion------------- */
-
-
-
 }
 
 /* ----------------fin PANTALLA  1200px---------- */
