@@ -1,17 +1,103 @@
 
-@media (min-width: 400px){
-
-}
 
 
 /* ----------------PANTALLA MOVIL 600px---------- */
 @media (min-width: 400px){
-    .titulo_servicios{
+    .titulo__servicios{
+        background-image: url(/img/img_servicios/presentacion-02.jpg);
+        background-position: center;
+        background-size: cover;
+    
+        height: 250px;
+     
+        color: white;
+        font-size: 2.5em;
         @include centrar_elementos_flex;
-        background-color: $color-encabezado;
-
+        text-align: center;
+        margin: 0%;
 
     }
+     .row {
+         margin-left: 0;
+         margin-right: 0; /* Elimina los márgenes negativos */
+     }
+
+    //tarjeta conteiner de img 
+.card__servicios{
+    height: 15em;        // le indico el alto y el ancho ya esta definido con la clase de bootstrap col-lg-6
+    padding: 0%;
+    
+}
+
+.texto__card-servicios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-size: 1.9rem;
+    background-color: rgba(219, 207, 217, 0.527);
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+
+    &:hover{
+        background-image: url(/img/img_servicios/bandera-arg.jfif);
+    }
+}
+.img__card-servicios{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para que cubra todo el contenedor sin deformarse */
+
+ &:hover{
+ transform: scale(1.1); /* Aumenta el tamaño de la imagen un 20% */
+ }
+  
+   }
+
+   //  <!-- informacion de los servicios que brinda el usuario -->
+
+   .title-h2__servicios{
+    background-color: rgb(171, 175, 214);
+    padding: .03em;
+    display: flex;
+    justify-content: center;
+
+   }
+  
+   .img__techo-servicios{
+width: 100%;
+padding: 1em
+   }
+
+   
+
+   .icon{
+    @include centrar_elementos_flex;
+   
+
+    position: absolute;
+    left: -0.5em;
+    margin:  0.3em 0em 0em 2em;
+    width: 3em;
+    height: 3em;
+
+    .icon-tilde{
+        width: 100%;
+        height: 100%;
+    }
+    
+   }
+   .texto__li-servicios{
+   padding: 0.7em;
+
+}
+
+
+
+
+
 
 }
 
@@ -21,7 +107,21 @@
 /* ----------------PANTALLA MOVIL 1200px---------- */
 @media (min-width: 1200px){
 
-    
+    .icon{
+        left: 50%;
+        margin: 0%;
+    }
+
+    .container__ul-servicios{
+        padding-top: 1em;
+
+    }
+
+    .texto__li-servicios {
+        padding: 0.3em;
+    }
+
+
 }
 
 /* ----------------FIN PANTALLA MOVIL 1200px---------- */

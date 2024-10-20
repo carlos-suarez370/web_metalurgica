@@ -12,6 +12,7 @@
         justify-content: center;
         text-align: center;
         align-items: center;
+        padding: 0.6em;
 
     }
 
@@ -66,6 +67,8 @@
     @include btn_nav-encabezado;
     }          
 }
+
+
            /* fin menu hamburguesa */
 }
 
@@ -131,6 +134,7 @@
         .navbar .container-fluid{
             margin: 0em 0em 0em 4em ;
         }
+       
             
 
         /* ---------barra de navegacion------------- */
@@ -139,21 +143,29 @@
         }
         .navbar-collapse{
             flex-grow: 0;
-             font-size: 1.2em;  
+             font-size: 1.05em;  
              background-color: $color__nav;
              margin: .5em;
              font-family: 'Poppins', sans-serif;
              font-weight: 545; /* Semi-negrita o más gruesa */
 
-
         }
+
         .navbar-expand-lg .navbar-nav{
             gap: 1.6em;           
         }
         .navbar-expand-lg .navbar-nav :hover{
-            background-color: rgb(179, 72, 72);
+            background-color: $color__Breadcrumb-nav;
             @include btn_nav-encabezado;
         }
+                  //migas de pan (breadcrumb)
+        .navbar-light .navbar-nav .nav-link.active{
+            @include btn_nav-encabezado;
+            background-color: $color__Breadcrumb-nav;
+            font-size: 1.2em
+        }
+                          //migas de pan
+
         
         /* ---------FIN  barra de navegacion------------- */
 }
