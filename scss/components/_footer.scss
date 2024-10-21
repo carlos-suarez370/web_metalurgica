@@ -6,7 +6,7 @@
   .encabezado_footer{
     background-color: rgb(189, 180, 180);
     padding-top: 4em;
-    padding: 2.8em 1em 1em 1em;
+    padding: 1em 0% 1em 1em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,8 +25,11 @@
 }
 
 .titulo_footer{
-    text-align: center;
     font-size: 1.3em;
+}
+
+.titulo_footer p{
+   margin: 0%;
 }
 .conteiner_datos-contacto{
     background-color: rgb(0, 0, 0);

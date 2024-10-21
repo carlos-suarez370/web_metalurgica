@@ -8,11 +8,11 @@
         padding: 0% 1em 1em 1em ;
     }
     .titulo__contacto {
-        background-image: url(/img/professional-industrial-welder-welding-metal-parts-metalworking-factory.jpg);
+        background-image: url(..//../img/professional-industrial-welder-welding-metal-parts-metalworking-factory.jpg);
         background-position: center;
         background-size: cover;
     
-        height: 250px;
+        height: 280px;
         display: flex;
         justify-content: center;
         color: white;
@@ -52,6 +52,7 @@
         flex-direction: row;
         gap: 4em;
         margin-block-end: 4.3em;
+        padding-top: 1em;
     }
 .sub-titulo__consultas{
     color: red;

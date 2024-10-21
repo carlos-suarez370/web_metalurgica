@@ -1,0 +1,141 @@
+/* ----------------PANTALLA MOVIL 350px---------- */
+/* <!-- --------------tarjeta de  wsp------- --> */
+@media (min-width: 400px){
+.contenedor__wsp{
+    display: flex;
+    justify-content: end;
+width: 100%;
+height: 30px;
+font-size: 1em;
+margin-bottom: 0rem;
+padding: 0em 1.5em 0em 0em;
+}
+.tarjeta-wsp:hover{
+    font-size: 0.75em;
+}
+.tarjeta-wsp{
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+
+width: 15em;
+height: 23px;
+font-size: 0.7em;
+text-align: center;
+
+background-color: rgb(61, 213, 31);
+gap: 0.2em;
+border-radius: 12px;
+color: white;
+}
+.img-wsp{
+    background-image: url(..//../img/logos-iconos/img-wsp.png);
+    background-position: center;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+}
+/* <!-- --------------fin tarjeta de  wsp------- --> */
+/* -------------tarjetas__ img- productos---------- */
+.tarjeta {
+    width: 8em;
+    height: 6em;
+    background-color: white;
+}
+.tarjeta:hover {
+    background-color: rgba(129, 146, 146, 0.142)
+}
+.tarjeta_img {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}}
+/* -------------fin tarjetas__ img- productos---------- */
+/* ----------------fin PANTALLA MOVIL 350px---------- */
+
+/* ----------------PANTALLA INICIO 1200px---------- */
+@media (min-width: 1200px) {
+ /* -------------tarjetas__ img- productos---------- */
+ .tarjeta {
+    width: 16em;
+    height: 16em;
+    background-color: white;
+}
+.tarjeta_img {
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+}
+ /* -------------tarjetas__ img- productos---------- */
+/* ----------------PANTALLA INICIO 1200px---------- */
+}
+
+/* -----------------------section productos pantalla 350px----------- */
+// tarjeta__productos
+.card-body {
+    flex: none;
+    flex-direction: column;
+    padding: 0.4em;
+    width: 8em;
+    height: 8.4em;
+}
+.card-title {
+    padding: 0.2em;
+}
+.card-img-top {
+    width: 100%;
+    height: 100%;
+}
+.row {
+    margin: 0%;
+}
+
+.contenedor__img {
+    display: flex;
+    width: 6.8em;
+    height: 5em
+}
+.img_producto {
+    width: 100%;
+    height: 100%;
+}
+// tarjeta precioss
+.tarjeta__producto {
+    padding: 0%;
+    margin: 0%;
+    width: 15;
+}
+.card{
+    display: flex;
+    width: 9.5rem;
+    height: 15rem;
+    padding: 0.7em;
+    margin: 0%;
+    margin-top: 0.7em;
+}
+.card:hover {
+    background-color: rgba(129, 146, 146, 0.142);
+}
+.card-text {
+    color: rgb(115, 203, 27);
+    font-size: 0.8em;
+    margin: 0%;
+}
+// fin tarjeta precioss
+
+// fin tarjeta__productos
+/* -----------------------fin section productos pantalla 350px----------- */
+
+
+
+/* ----------------------section productos pantalla 1200px----------- */
+@media (min-width: 1200px) {
+
+
+
+}
+
+
+
+/* ----------------------section productos pantalla 1200px----------- */

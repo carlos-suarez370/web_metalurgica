@@ -1,14 +1,26 @@
-/* ----------------PANTALLA MOVIL 600px---------- */
-@media (min-width: 600px){
 
+/* -----------------------section productos pantalla 350px----------- */
+
+/* ----------------fin IMG transparente y titulo ---------------------- */
+/* --------------subtitulo------------- */
+.contendor__portada-principal {
+    padding: 0em 0em 1em 2em;
 }
-
-/* ----------------FIN PANTALLA MOVIL 600px---------- */
-
-
-/* ----------------PANTALLA MOVIL 1200px---------- */
-@media (min-width: 1200px){
-
+.subtitulo__portada {
+    display: flex;
+    padding: 0.5em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(141, 146, 146, 0.26);
 }
+/* -----------------------fin section productos pantalla 350px----------- */
 
-/* ----------------FIN PANTALLA MOVIL 1200px---------- */
+/* ----------------------- section productos pantalla 1200px----------- */
+@media (min-width: 1200px) {
+    .contendor__portada-principal {
+        width: 960px;
+    }
+  
+}
+/* -----------------------fin section productos pantalla 1200px----------- */

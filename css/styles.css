@@ -69,13 +69,16 @@ a {
 /* --------------img y titulo----------- */
 @media (min-width: 400px) {
   .container__nosotros {
+    background-image: url(..//..//img/img_servicios/bandera-arg.jfif);
+    background-size: cover; /* Hace que la imagen cubra todo el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
     display: flex;
     flex-direction: column;
     text-align: center;
   }
   .titulo__nosotros {
     padding: 0.55em;
-    margin: 0%;
+    margin: 0em 0em 0.5em 0em;
     background-color: brown;
     font-size: 1.5em;
     color: rgb(239, 216, 216);
@@ -101,7 +104,7 @@ a {
     flex-direction: column;
   }
   .img-niños {
-    background-image: url(/img/img_nosotros/ninos_comedor.txt);
+    background-image: url(..//../img/img_nosotros/ninos_comedor.txt);
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -115,11 +118,11 @@ a {
     width: 16em;
     text-align: center;
     height: 3.5em;
-    color: rgb(189, 189, 189);
+    color: rgb(179, 13, 13);
     border-radius: 0.6em;
   }
   .img-niño-albañil {
-    background-image: url(/img/img_nosotros/ninos_unisef.txt);
+    background-image: url(..//../img/img_nosotros/ninos_unisef.txt);
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -165,7 +168,6 @@ a {
     width: 13em;
     text-align: center;
     height: 4.5em;
-    color: rgb(189, 189, 189);
     border-radius: 0.6em;
   }
 }
@@ -225,10 +227,30 @@ a {
   }
 }
 /* ----------------------fin section nosotros pantalla 1200px----------- */
-/* ----------------PANTALLA MOVIL 600px---------- */
-/* ----------------FIN PANTALLA MOVIL 600px---------- */
-/* ----------------PANTALLA MOVIL 1200px---------- */
-/* ----------------FIN PANTALLA MOVIL 1200px---------- */
+/* -----------------------section productos pantalla 350px----------- */
+/* ----------------fin IMG transparente y titulo ---------------------- */
+/* --------------subtitulo------------- */
+.contendor__portada-principal {
+  padding: 0em 0em 1em 2em;
+}
+
+.subtitulo__portada {
+  display: flex;
+  padding: 0.5em;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(141, 146, 146, 0.26);
+}
+
+/* -----------------------fin section productos pantalla 350px----------- */
+/* ----------------------- section productos pantalla 1200px----------- */
+@media (min-width: 1200px) {
+  .contendor__portada-principal {
+    width: 960px;
+  }
+}
+/* -----------------------fin section productos pantalla 1200px----------- */
 /* ----------------PANTALLA MOVIL 600px---------- */
 @media (min-width: 400px) {
   .titulo__servicios {
@@ -264,7 +286,7 @@ a {
     margin: 0%;
   }
   .texto__card-servicios:hover {
-    background-image: url(/img/img_servicios/bandera-arg.jfif);
+    background-image: url();
   }
   .img__card-servicios {
     width: 100%;
@@ -327,10 +349,10 @@ a {
     padding: 0% 1em 1em 1em;
   }
   .titulo__contacto {
-    background-image: url(/img/professional-industrial-welder-welding-metal-parts-metalworking-factory.jpg);
+    background-image: url(..//../img/professional-industrial-welder-welding-metal-parts-metalworking-factory.jpg);
     background-position: center;
     background-size: cover;
-    height: 250px;
+    height: 280px;
     display: flex;
     justify-content: center;
     color: white;
@@ -361,6 +383,7 @@ a {
     flex-direction: row;
     gap: 4em;
     margin-block-end: 4.3em;
+    padding-top: 1em;
   }
   .sub-titulo__consultas {
     color: red;
@@ -516,7 +539,7 @@ a {
   .encabezado_footer {
     background-color: rgb(189, 180, 180);
     padding-top: 4em;
-    padding: 2.8em 1em 1em 1em;
+    padding: 1em 0% 1em 1em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -534,8 +557,10 @@ a {
     display: flex;
   }
   .titulo_footer {
-    text-align: center;
     font-size: 1.3em;
+  }
+  .titulo_footer p {
+    margin: 0%;
   }
   .conteiner_datos-contacto {
     background-color: rgb(0, 0, 0);
@@ -596,6 +621,177 @@ a {
   }
 }
 /* ----------------FIN PANTALLA MOVIL 1200px---------- */
+/* -----------------------section productos pantalla 350px----------- */
+@media (min-width: 400px) {
+  .btn {
+    font-size: 0.5em;
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+    padding: 0.3em;
+    font-size: 0.6em;
+  }
+  .btn:hover {
+    background-color: brown;
+  }
+  /* -----------------------fin section productos pantalla 350px----------- */
+  .btn__formulario {
+    background-color: rgba(243, 10, 10, 0.747);
+    color: white;
+    width: 15em;
+  }
+}
+@media (min-width: 600px) {
+  .btn {
+    font-size: 0.65em;
+    margin: 0.3em 0em 1em 0em;
+  }
+  .btn__formulario {
+    font-size: 0.8em;
+  }
+}
+/* ----------------section contacto PANTALLA 1200PX -------------- */
+@media (min-width: 1200px) {
+  .btn__formulario {
+    background-color: rgba(243, 10, 10, 0.747);
+    color: white;
+    width: 23.7em;
+    text-align: center;
+    margin: 0.4em 0em 0em 0em;
+  }
+  /* ----------------fin section contacto PANTALLA 1200PX -------------- */
+}
+/* ----------------PANTALLA MOVIL 350px---------- */
+/* <!-- --------------tarjeta de  wsp------- --> */
+@media (min-width: 400px) {
+  .contenedor__wsp {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    height: 30px;
+    font-size: 1em;
+    margin-bottom: 0rem;
+    padding: 0em 1.5em 0em 0em;
+  }
+  .tarjeta-wsp:hover {
+    font-size: 0.75em;
+  }
+  .tarjeta-wsp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 15em;
+    height: 23px;
+    font-size: 0.7em;
+    text-align: center;
+    background-color: rgb(61, 213, 31);
+    gap: 0.2em;
+    border-radius: 12px;
+    color: white;
+  }
+  .img-wsp {
+    background-image: url(..//../img/logos-iconos/img-wsp.png);
+    background-position: center;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+  }
+  /* <!-- --------------fin tarjeta de  wsp------- --> */
+  /* -------------tarjetas__ img- productos---------- */
+  .tarjeta {
+    width: 8em;
+    height: 6em;
+    background-color: white;
+  }
+  .tarjeta:hover {
+    background-color: rgba(129, 146, 146, 0.142);
+  }
+  .tarjeta_img {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+  }
+}
+/* -------------fin tarjetas__ img- productos---------- */
+/* ----------------fin PANTALLA MOVIL 350px---------- */
+/* ----------------PANTALLA INICIO 1200px---------- */
+@media (min-width: 1200px) {
+  /* -------------tarjetas__ img- productos---------- */
+  .tarjeta {
+    width: 16em;
+    height: 16em;
+    background-color: white;
+  }
+  .tarjeta_img {
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+  }
+  /* -------------tarjetas__ img- productos---------- */
+  /* ----------------PANTALLA INICIO 1200px---------- */
+}
+/* -----------------------section productos pantalla 350px----------- */
+.card-body {
+  flex: none;
+  flex-direction: column;
+  padding: 0.4em;
+  width: 8em;
+  height: 8.4em;
+}
+
+.card-title {
+  padding: 0.2em;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+}
+
+.row {
+  margin: 0%;
+}
+
+.contenedor__img {
+  display: flex;
+  width: 6.8em;
+  height: 5em;
+}
+
+.img_producto {
+  width: 100%;
+  height: 100%;
+}
+
+.tarjeta__producto {
+  padding: 0%;
+  margin: 0%;
+  width: 15;
+}
+
+.card {
+  display: flex;
+  width: 9.5rem;
+  height: 15rem;
+  padding: 0.7em;
+  margin: 0%;
+  margin-top: 0.7em;
+}
+
+.card:hover {
+  background-color: rgba(129, 146, 146, 0.142);
+}
+
+.card-text {
+  color: rgb(115, 203, 27);
+  font-size: 0.8em;
+  margin: 0%;
+}
+
+/* -----------------------fin section productos pantalla 350px----------- */
+/* ----------------------section productos pantalla 1200px----------- */
+/* ----------------------section productos pantalla 1200px----------- */
 @media (min-width: 400px) {
   .contenedor__animacion-nosotros {
     width: 100%;
@@ -630,16 +826,7 @@ a {
     opacity: 0;
     visibility: hidden;
     text-align: center;
-  }
-  .capa2__h3 {
-    color: #fff;
-    font-size: 15px;
-    line-height: 1.5;
-    width: 100%;
-    max-width: auto;
-  }
-  .capa2__p {
-    color: #fff;
+    color: white;
   }
   .contenedor__animacion-nosotros figure:hover > .capa2 {
     opacity: 1;

@@ -1,0 +1,46 @@
+// index no hay btn
+// section productos
+/* -----------------------section productos pantalla 350px----------- */
+@media (min-width: 400px){
+.btn {
+    font-size: 0.5em;
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+    padding: 0.3em;
+    font-size: 0.6em;
+}
+.btn:hover {
+    background-color: brown;
+}
+/* -----------------------fin section productos pantalla 350px----------- */ 
+
+        // section contacto 350px
+.btn__formulario {
+    background-color: rgba(243, 10, 10, 0.747);
+    color: white;
+    width: 15em;
+}}
+// fin section contacto 350px
+
+@media (min-width: 600px) {
+    .btn{
+        font-size: 0.65em;
+        margin: 0.3em 0em 1em 0em;
+    }
+.btn__formulario{
+       font-size: 0.8em; 
+    }
+}
+
+/* ----------------section contacto PANTALLA 1200PX -------------- */
+@media (min-width: 1200px) {
+    .btn__formulario {
+        background-color: rgba(243, 10, 10, 0.747);
+        color: white;
+        width: 23.7em;
+        text-align: center;
+        margin: 0.4em 0em 0em 0em;
+    }
+    /* ----------------fin section contacto PANTALLA 1200PX -------------- */
+}
