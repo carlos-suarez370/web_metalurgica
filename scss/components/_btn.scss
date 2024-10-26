@@ -9,6 +9,7 @@
     margin: 1em;
     padding: 0.3em;
     font-size: 0.6em;
+   
 }
 .btn:hover {
     background-color: brown;
@@ -20,7 +21,14 @@
     background-color: rgba(243, 10, 10, 0.747);
     color: white;
     width: 15em;
-}}
+}
+
+.icono-hover{
+    display: none;
+}
+
+
+}
 // fin section contacto 350px
 
 @media (min-width: 600px) {
@@ -42,5 +50,62 @@
         text-align: center;
         margin: 0.4em 0em 0em 0em;
     }
-    /* ----------------fin section contacto PANTALLA 1200PX -------------- */
+    /* ----------------fin section contacto 
+    PANTALLA 1200PX -------------- */
+
+
+            // seccion inicio
+
+            
+    // boton con elementos desplegables corazon y ojo
+/* Iconos de corazón */
+.container__carrito .icono-hover {
+    font-size: 18px;
+    color: $color__btn-hover-corazon;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    cursor: pointer;
+
+    &:hover{
+        color: white;
+    }
+}
+
+/* Icono izquierdo (inicia en el centro y se desplaza hacia la izquierda) */
+.container__carrito .icono-hover:first-child {
+    transform: translateX(0);
+    left: calc(50% - 1em - 15px); /* Se coloca inicialmente en el centro */
+}
+
+/* Icono derecho (inicia en el centro y se desplaza hacia la derecha) */
+.container__carrito .icono-hover:last-child {
+    transform: translateX(0);
+    right: calc(50% - 1em - 15px); /* Se coloca inicialmente en el centro */
+}
+
+/* Efecto hover en el contenedor para mostrar y desplazar los iconos */
+.container__carrito:hover .icono-hover {
+    opacity: 1;
+}
+
+/* Hover para desplazar los corazones a los extremos */
+.container__carrito:hover .icono-hover:first-child {
+    transform: translateX(calc(-100% - 3.6em)); /* Hacia la izquierda */
+}
+.container__carrito:hover .icono-hover:last-child {
+    transform: translateX(calc(100% + 3.6em)); /* Hacia la derecha */
+}
+
+.icono-hover{
+    display: block;
+    padding: 0.35em;
+    border: 1px solid $color__btn-hover-corazon;
+    border-radius: 7px; 
+
+    &:hover{
+        background-color: $color__btn-hover-corazon;
+    }
+}
+// boton con elementos desplegables corazon y ojo
 }

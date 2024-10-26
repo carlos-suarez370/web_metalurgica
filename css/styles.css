@@ -23,34 +23,152 @@ a {
 
 /* ----------------PANTALLA MOVIL 400px---------- */
 @media (min-width: 400px) {
-  /* Galeria Home productos */
-  .home_productos {
-    background-color: white;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2em;
-    justify-content: space-around;
-    padding: 0em 0em 2.5em 0em;
+  .carousel-dark .carousel-caption {
+    background-color: rgba(97, 97, 97, 0.1921568627);
+    color: azure;
+    font-family: Georgia, "Times New Roman", Times, serif;
   }
-  .texto_home_productos {
+  .main__barra-lateral {
+    display: none;
+  }
+  .titulo__main {
     display: flex;
-    width: 100%;
-    height: 100%;
     justify-content: center;
-    align-items: center;
-    background-color: rgba(228, 223, 223, 0.984);
-    margin: 0% 0% 0% 0%;
-    padding: 0.5em;
+    padding-top: 0.5em;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 600; /* O usa 400 para un estilo más ligero */
+    color: #616161;
   }
-  .tarjeta {
-    width: 9em;
-    height: 7em;
-    background-color: white;
+  .card__productos-inicio {
+    display: block;
+    position: relative;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    width: 100%;
+    padding: 0.2381em;
   }
-  .tarjeta img {
-    width: 100%; /* Ajusta el tamaño del contenedor */
-    height: 100%; /* Ajusta el tamaño del contenedor */
-    overflow: hidden; /* Esconde cualquier exceso */
+  .producto-1:hover {
+    background-image: url(..//..//img/img__index/img__productos-inicio/bañera_mascota-hover.jpg);
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  }
+  .producto-1:hover .bañera-mascota {
+    opacity: 0;
+  }
+  .producto-2:hover {
+    background-image: url(..//..//img/img__index/img__productos-inicio/horno_leña-prod2.png);
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  }
+  .producto-2:hover .horno-prod2 {
+    opacity: 0;
+  }
+  .producto-3:hover {
+    background-image: url(..//..//img/img__index/img__productos-inicio/prod-3-hover.jpg);
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  }
+  .producto-3:hover .barra-prod3 {
+    opacity: 0;
+  }
+  .producto-4:hover {
+    background-image: url(..//..//img/img__index/img__productos-inicio/prod4-hover.jpeg);
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  }
+  .producto-4:hover .home_prod4 {
+    opacity: 0;
+  }
+  .producto-5:hover {
+    background-image: url(..//..//img/img__index/img__productos-inicio/prod-5-hover.png);
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  }
+  .producto-5:hover .asador_prod5 {
+    opacity: 0;
+  }
+  .producto-6:hover {
+    background-image: url(..//..//img/img__index/img__productos-inicio/bandejas-prod6.jpeg);
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  }
+  .producto-6:hover .bandejas-prod6 {
+    opacity: 0;
+  }
+  .img__productos-inicio {
+    width: 100%;
+    position: relative;
+  }
+  .img__productos-inicio img {
+    width: 100%;
+  }
+  .description__producto-inicio {
+    display: flex;
+    justify-content: center;
+    font-size: 0.7rem;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 0.5em;
+  }
+  .description__producto-inicio p {
+    color: rgb(99, 98, 98);
+    margin-bottom: 0rem;
+  }
+  .description__producto-inicio p:hover {
+    color: rgb(18, 18, 228);
+  }
+  .img__estrellas {
+    width: 100%;
+  }
+  .img__estrellas img {
+    width: 100%;
+  }
+  .precio__card-inicio {
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem; /* Ajusta según sea necesario */
+    font-weight: bold; /* Resalta el precio */
+  }
+  .precio__card-inicio p {
+    margin-bottom: 0.4rem;
+  }
+  .btn__carrito {
+    justify-content: center;
+    display: inline-flex; /* Alinea el ícono y el texto en la misma fila */
+    align-items: center; /* Alinea verticalmente los elementos */
+    padding: 0.3em 1em;
+    color: black;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    transition: background-color 0.3s ease; /* Transición suave para el fondo */
+    cursor: pointer;
+  }
+  .btn__carrito i {
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+    transition: color 0.3s ease; /* Transición suave para el color del ícono */
+  }
+  .btn__carrito span {
+    font-size: 0.8rem;
+    transition: color 0.3s ease; /* Transición suave para el color del texto */
+  }
+  .container__carrito:hover .btn__carrito {
+    background-color: #3498db;
+  }
+  .container__carrito:hover .icono__carrito,
+  .container__carrito:hover span {
+    color: white; /* Cambia el color del ícono y del texto al hacer hover */
+  }
+  .producto__inicio {
+    padding-top: 0.5em;
+    padding-bottom: 0.7em;
   }
 }
 /* ----------------FIN  PANTALLA MOVIL 400px---------- */
@@ -58,10 +176,71 @@ a {
 /* ----------------FIN PANTALLA MOVIL 600px---------- */
 /* ----------------PANTALLA MOVIL 1200px---------- */
 @media (min-width: 1200px) {
-  .tarjeta {
-    width: 16em;
-    height: 16em;
-    background-color: white;
+  .carousel-inner {
+    height: 33.5em;
+  }
+  .carousel-dark .carousel-caption {
+    padding: 0% 0% 9em 0em;
+  }
+  .main__barra-lateral {
+    display: block;
+    padding-top: 1.5em;
+  }
+  .card__productos-inicio {
+    display: block;
+    position: relative;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    width: 100%;
+    padding: 0.2381em;
+    margin-bottom: 1em;
+  }
+  .card__productos-inicio .titulo__barra-lateral {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background-color: rgba(226, 222, 222, 0.4862745098);
+    border: 3px solid #ddd;
+    border-radius: 7px;
+    padding: 0.2em;
+  }
+  .card__productos-inicio .img__productos-inicio {
+    width: 300;
+    height: 300;
+    position: relative;
+  }
+  .main__texto-barra {
+    background-color: rgba(235, 231, 231, 0.253);
+  }
+  .texto__barra-lateral {
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+  }
+  .texto__barra-lateral a {
+    margin: 0.5em;
+    color: rgb(99, 98, 98);
+  }
+  .texto__barra-lateral a:hover {
+    color: rgb(18, 18, 228);
+  }
+  .producto__inicio {
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+  }
+  .description__producto-inicio {
+    font-size: 1rem;
+  }
+  .btn__carrito {
+    width: 11.3em;
+    display: flex;
+  }
+  .container__carrito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .btn__carrito span {
+    font-size: 1rem;
   }
 }
 /* ----------------FIN PANTALLA MOVIL 1200px---------- */
@@ -118,7 +297,7 @@ a {
     width: 16em;
     text-align: center;
     height: 3.5em;
-    color: rgb(179, 13, 13);
+    color: rgb(189, 189, 189);
     border-radius: 0.6em;
   }
   .img-niño-albañil {
@@ -228,19 +407,21 @@ a {
 }
 /* ----------------------fin section nosotros pantalla 1200px----------- */
 /* -----------------------section productos pantalla 350px----------- */
-/* ----------------fin IMG transparente y titulo ---------------------- */
-/* --------------subtitulo------------- */
 .contendor__portada-principal {
   padding: 0em 0em 1em 2em;
 }
 
-.subtitulo__portada {
+.titulo__productos {
+  background-image: url(..//../img/img_galeria-productos/portada__productos.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 280px;
   display: flex;
-  padding: 0.5em;
   text-align: center;
-  align-items: center;
   justify-content: center;
-  background-color: rgba(141, 146, 146, 0.26);
+  color: white;
+  font-size: 2.5em;
+  align-items: center;
 }
 
 /* -----------------------fin section productos pantalla 350px----------- */
@@ -254,7 +435,7 @@ a {
 /* ----------------PANTALLA MOVIL 600px---------- */
 @media (min-width: 400px) {
   .titulo__servicios {
-    background-image: url(/img/img_servicios/presentacion-02.jpg);
+    background-image: url(..//..//img/img_servicios/presentacion-02.jpg);
     background-position: center;
     background-size: cover;
     height: 250px;
@@ -267,8 +448,13 @@ a {
     margin: 0%;
   }
   .row {
+    overflow: hidden;
+    border-radius: 9px;
     margin-left: 0;
     margin-right: 0; /* Elimina los márgenes negativos */
+  }
+  .tarjeta-servicios {
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
   }
   .card__servicios {
     height: 15em;
@@ -417,16 +603,12 @@ a {
     padding: 0%;
   }
   .buscador {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    font-size: 0.85em;
-    margin: 0.75em;
-  }
-  .buscador .numero_telefono {
     display: none;
   }
-  .buscador .logo_telefono {
+  .numero_telefono {
+    display: none;
+  }
+  .logo_telefono {
     display: none;
   }
   /* ---------FIN LOGO DE LA EMPRES__Y BUSCADOR------------- */
@@ -452,7 +634,8 @@ a {
   .navbar-expand-lg .navbar-nav {
     gap: 1em;
   }
-  .navbar-expand-lg .navbar-nav:hover {
+  .navbar-expand-lg .navbar-nav :hover {
+    background-color: rgb(179, 72, 72);
     text-decoration: none;
     transition: background-color 1s ease, color 1s ease;
     border-radius: 6px;
@@ -477,6 +660,9 @@ a {
     height: 6.5em;
   }
   .buscador {
+    display: flex;
+    text-align: center;
+    justify-content: center;
     font-size: 1em;
     justify-content: end;
     gap: 2em;
@@ -640,6 +826,9 @@ a {
     color: white;
     width: 15em;
   }
+  .icono-hover {
+    display: none;
+  }
 }
 @media (min-width: 600px) {
   .btn {
@@ -659,7 +848,50 @@ a {
     text-align: center;
     margin: 0.4em 0em 0em 0em;
   }
-  /* ----------------fin section contacto PANTALLA 1200PX -------------- */
+  /* ----------------fin section contacto 
+  PANTALLA 1200PX -------------- */
+  /* Iconos de corazón */
+  .container__carrito .icono-hover {
+    font-size: 18px;
+    color: rgb(216, 63, 63);
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    cursor: pointer;
+  }
+  .container__carrito .icono-hover:hover {
+    color: white;
+  }
+  /* Icono izquierdo (inicia en el centro y se desplaza hacia la izquierda) */
+  .container__carrito .icono-hover:first-child {
+    transform: translateX(0);
+    left: calc(50% - 1em - 15px); /* Se coloca inicialmente en el centro */
+  }
+  /* Icono derecho (inicia en el centro y se desplaza hacia la derecha) */
+  .container__carrito .icono-hover:last-child {
+    transform: translateX(0);
+    right: calc(50% - 1em - 15px); /* Se coloca inicialmente en el centro */
+  }
+  /* Efecto hover en el contenedor para mostrar y desplazar los iconos */
+  .container__carrito:hover .icono-hover {
+    opacity: 1;
+  }
+  /* Hover para desplazar los corazones a los extremos */
+  .container__carrito:hover .icono-hover:first-child {
+    transform: translateX(calc(-100% - 3.6em)); /* Hacia la izquierda */
+  }
+  .container__carrito:hover .icono-hover:last-child {
+    transform: translateX(calc(100% + 3.6em)); /* Hacia la derecha */
+  }
+  .icono-hover {
+    display: block;
+    padding: 0.35em;
+    border: 1px solid rgb(216, 63, 63);
+    border-radius: 7px;
+  }
+  .icono-hover:hover {
+    background-color: rgb(216, 63, 63);
+  }
 }
 /* ----------------PANTALLA MOVIL 350px---------- */
 /* <!-- --------------tarjeta de  wsp------- --> */

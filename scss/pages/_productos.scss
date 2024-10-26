@@ -1,18 +1,20 @@
 
 /* -----------------------section productos pantalla 350px----------- */
 
-/* ----------------fin IMG transparente y titulo ---------------------- */
-/* --------------subtitulo------------- */
 .contendor__portada-principal {
     padding: 0em 0em 1em 2em;
 }
-.subtitulo__portada {
+.titulo__productos{
+    background-image: url(..//../img/img_galeria-productos/portada__productos.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 280px;
     display: flex;
-    padding: 0.5em;
     text-align: center;
-    align-items: center;
     justify-content: center;
-    background-color: rgba(141, 146, 146, 0.26);
+    color: white;
+    font-size: 2.5em;
+    align-items: center;
 }
 /* -----------------------fin section productos pantalla 350px----------- */
 

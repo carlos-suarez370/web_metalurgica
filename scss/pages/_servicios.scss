@@ -4,7 +4,7 @@
 /* ----------------PANTALLA MOVIL 600px---------- */
 @media (min-width: 400px){
     .titulo__servicios{
-        background-image: url(/img/img_servicios/presentacion-02.jpg);
+        background-image: url(..//..//img/img_servicios/presentacion-02.jpg);
         background-position: center;
         background-size: cover;
     
@@ -18,9 +18,18 @@
 
     }
      .row {
+        overflow: hidden;
+        border-radius: 9px;
          margin-left: 0;
-         margin-right: 0; /* Elimina los márgenes negativos */
-     }
+         
+         
+        margin-right: 0; /* Elimina los márgenes negativos */
+       
+    }
+     .tarjeta-servicios{
+            box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.6);
+
+        }
 
     //tarjeta conteiner de img 
 .card__servicios{

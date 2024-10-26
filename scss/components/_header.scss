@@ -23,19 +23,18 @@
         padding: 0%;
 
     }
-    .buscador{
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        font-size: .85em;
-        margin: .75em;
-        .numero_telefono{
-            display: none;
-        }
-        .logo_telefono{
-            display: none;
-        }
+.buscador{
+        display: none;
+
     }
+    
+    .numero_telefono{
+        display: none;
+    }
+    .logo_telefono{
+        display: none;
+    }
+   
 
     /* ---------FIN LOGO DE LA EMPRES__Y BUSCADOR------------- */
 
@@ -62,12 +61,12 @@
 }
 
 .navbar-expand-lg .navbar-nav{
-    gap: 1em; 
-    &:hover{
-    @include btn_nav-encabezado;
-    }          
+    gap: 1em;           
 }
-
+.navbar-expand-lg .navbar-nav :hover{
+    background-color: $color__Breadcrumb-nav;
+    @include btn_nav-encabezado;
+}
 
            /* fin menu hamburguesa */
 }
@@ -102,7 +101,12 @@
             width: 16em;
             height: 6.5em;
         } 
+
         .buscador{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+
             font-size: 1em;
             justify-content: end;
             gap: 2em;

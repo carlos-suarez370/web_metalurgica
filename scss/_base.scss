@@ -35,6 +35,10 @@ $color__nav: rgb(231, 223, 228);
 //color de btn migas de pan y hover
 $color__Breadcrumb-nav: rgb(179, 72, 72);
 
+//color de boton de corazon en carrito de compras
+$color__btn-hover-corazon: rgb(216, 63, 63);
+
+
 
 //footer
 $color-footer:chocolate;
@@ -44,6 +48,14 @@ $color__border-solid: chocolate;
 // variables
 
 // mixin
+//tarjetas productos en inicio
+@mixin card__productos-inicio{ 
+    background-position: center;  /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover;       /* Asegura que la imagen cubra todo el contenedor */
+
+}
+
 @mixin btn_nav-encabezado{ 
     text-decoration: none;
     transition: background-color 1s ease, color 1s ease;

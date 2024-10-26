@@ -1,41 +1,184 @@
 /* ----------------PANTALLA MOVIL 400px---------- */
 @media (min-width: 400px){
 
-
-        /* Galeria Home productos */
-        .home_productos{
-            background-color: $color-galeria-productos;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2em;
-            justify-content: space-around;
-            padding: 0em 0em 2.5em 0em;
-        }
-      
-        .texto_home_productos{
-            display: flex;
-          width: 100%;
-            height: 100%;
-            justify-content: center;
-            align-items: center;
-            background-color: rgba(228, 223, 223, 0.984);
-            margin: 0% 0% 0% 0%;
-            padding: 0.5em;
-        }
     
-        .tarjeta{
-            width: 9em;
-            height: 7em;
-            background-color: white;
-        }
-        .tarjeta img{
-            width: 100%;   /* Ajusta el tamaño del contenedor */
-            height: 100%;   /* Ajusta el tamaño del contenedor */
-            overflow: hidden; /* Esconde cualquier exceso */
+   //carrusel
+    .carousel-dark .carousel-caption{
+        background-color: #61616131;
+       color: azure;
+       font-family: Georgia, 'Times New Roman', Times, serif;
 
-        }
+    }
+       //  fiiin carrusel
+ 
+    //    barra lateral
+       .main__barra-lateral{
+        display: none;
+    }
+    //   finn barra lateral
+    
+// ----------------------------------------------------------
+
+    // contenido principal
+    .titulo__main{
+        display: flex;
+        justify-content: center;
+        padding-top: 0.5em;
+        
+      font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 600;  /* O usa 400 para un estilo más ligero */
+        color: #616161;    
+    }
+
+    // tarjetas
+    .card__productos-inicio  {
+        display: block;
+        position: relative;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 7px; 
+        width: 100%;
+        padding: 0.2381em;
+   
+    }
+
+    // efecto hover sobre cada img de productos
+     .producto-1:hover{
+        background-image: url(..//..//img/img__index/img__productos-inicio/bañera_mascota-hover.jpg);
+        .bañera-mascota{opacity: 0;}
+
+        @include card__productos-inicio
+    }
+
+    .producto-2:hover{
+        background-image: url(..//..//img/img__index/img__productos-inicio/horno_leña-prod2.png);
+        .horno-prod2{opacity: 0;}
+
+        @include card__productos-inicio
+    }
+
+    .producto-3:hover{
+        background-image: url(..//..//img/img__index/img__productos-inicio/prod-3-hover.jpg);
+        .barra-prod3{opacity: 0;}
+
+        @include card__productos-inicio
+    }
+    .producto-4:hover{
+        background-image: url(..//..//img/img__index/img__productos-inicio/prod4-hover.jpeg);
+        .home_prod4{opacity: 0;}
+
+        @include card__productos-inicio
+    }
+    .producto-5:hover{
+        background-image: url(..//..//img/img__index/img__productos-inicio/prod-5-hover.png);
+        .asador_prod5{opacity: 0;}
+
+        @include card__productos-inicio
+    }
+    .producto-6:hover{
+        background-image: url(..//..//img/img__index/img__productos-inicio/bandejas-prod6.jpeg);
+        .bandejas-prod6{opacity: 0;}
+
+        @include card__productos-inicio
+    }
+
+    
+
+    .img__productos-inicio{
+        width: 100%;
+         position: relative;
+       & img{
+            width: 100%;
+       }
+    }
+
+    .description__producto-inicio{
+        display: flex;
+        justify-content: center;
+       font-size: 0.7rem;
+       font-family: 'Montserrat', sans-serif;
+       margin-top: 0.5em;
+
+            & p{
+                color: rgb(99, 98, 98);
+                margin-bottom: 0rem;
+                &:hover{
+                    color: rgb(18, 18, 228);  }
+                                      } 
+    }
+
+    .img__estrellas{
+        width: 100%;
+
+          & img{
+            width: 100%;}
+    }
+
+    .precio__card-inicio{
+        display: flex;
+        justify-content: center;
+       font-family: 'Montserrat', sans-serif;
+    font-size: 1rem; /* Ajusta según sea necesario */
+    font-weight: bold; /* Resalta el precio */
 
 
+           & p{
+            margin-bottom: 0.4rem;} 
+        
+  }
+//hover carrito
+
+.btn__carrito {
+    justify-content: center;
+    display: inline-flex; /* Alinea el ícono y el texto en la misma fila */
+    align-items: center; /* Alinea verticalmente los elementos */
+    padding: 0.3em 1em;
+    
+    color: black; 
+    
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 7px; 
+
+    transition: background-color 0.3s ease; /* Transición suave para el fondo */
+    cursor: pointer;
+
+}
+
+.btn__carrito i {
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+    transition: color 0.3s ease; /* Transición suave para el color del ícono */
+}
+
+.btn__carrito span {
+    font-size: 0.8rem;
+    transition: color 0.3s ease; /* Transición suave para el color del texto */
+}
+
+.container__carrito:hover .btn__carrito{
+    background-color: #3498db; 
+}
+
+.container__carrito:hover .icono__carrito,
+.container__carrito:hover span {
+    color: white; /* Cambia el color del ícono y del texto al hacer hover */
+}
+
+.producto__inicio{
+    padding-top: 0.5em;
+padding-bottom: 0.7em;
+}
+
+//hover carrito
+
+
+
+
+
+   
+        
+
+     
 }
 /* ----------------FIN  PANTALLA MOVIL 400px---------- */
 
@@ -51,12 +194,113 @@
 /* ----------------PANTALLA MOVIL 1200px---------- */
 @media (min-width: 1200px){
    
-    .tarjeta{
-        width: 16em;
-        height: 16em;
-        background-color: white;
+    //carrusel 
+    .carousel-inner{
+        height: 33.5em;
     }
 
+    .carousel-dark .carousel-caption{
+        padding: 0% 0% 9em 0em;
+     }
+         //carrusel 
+
+          //    barra lateral
+       .main__barra-lateral{
+        display: block;
+        padding-top: 1.5em;
+
+    }
+
+    
+
+    .card__productos-inicio {
+        display: block;
+        position: relative;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 7px; 
+        width: 100%;
+        padding: 0.2381em;
+        margin-bottom: 1em;
+
+
+         & .titulo__barra-lateral{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+             background-color:  #e2dede7c;;
+             border: 3px solid #ddd;
+             border-radius: 7px;
+             padding: 0.2em;
+        }
+        & .img__productos-inicio{
+            width: 300;
+            height: 300;
+           
+             position: relative;
+        }
+    }
+
+    .main__texto-barra{
+        background-color: rgba(235, 231, 231, 0.253);
+    }
+    .texto__barra-lateral {
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+    }
+    .texto__barra-lateral a{
+        margin: 0.5em;
+        color: rgb(99, 98, 98);
+        &:hover{
+            color: rgb(18, 18, 228);  }
+    }
+
+
+//     .img__productos-inicio .bañera-mascota:hover{
+// background-image: url(..//../img/img__index/img__productos-inicio/bañera_mascota-hover.jpg);    }
+    
+
+    //   finn barra lateral
+
+
+//tarjeta de productos 
+.producto__inicio{
+    padding-top: 0.5em;
+padding-bottom: 1em;
+}
+
+.description__producto-inicio{
+    font-size: 1rem;
+}
+
+//tarjeta de productos 
+
+
+//btn carrito hover
+.btn__carrito{
+    
+     width: 11.3em;
+    display: flex;
+}
+.container__carrito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.btn__carrito span{
+    font-size: 1rem;
+}
+// fiiin btn carrito hover
+
+
+
+
+   
+
+
+
+    
 }
 
 /* ----------------FIN PANTALLA MOVIL 1200px---------- */
