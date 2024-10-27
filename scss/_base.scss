@@ -4,8 +4,12 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    
 }
 
+p{
+    margin-bottom: 0%;
+}
 ul,
 ol {
     list-style: none;
@@ -33,10 +37,10 @@ $color-galeria-productos:white;
 $color__nav: rgb(231, 223, 228);
 
 //color de btn migas de pan y hover
-$color__Breadcrumb-nav: rgb(179, 72, 72);
+$color__Breadcrumb-nav: rgba(179, 72, 72, 0.623);
 
 //color de boton de corazon en carrito de compras
-$color__btn-hover-corazon: rgb(216, 63, 63);
+$color__btn-hover-corazon: rgba(223, 52, 52, 0.753);
 
 
 

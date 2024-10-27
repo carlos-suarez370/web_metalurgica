@@ -21,6 +21,8 @@
 
     // contenido principal
     .titulo__main{
+        background-color: #b4b4b42a;
+        border: 1px solid #ddd;
         display: flex;
         justify-content: center;
         padding-top: 0.5em;
@@ -210,9 +212,6 @@ padding-bottom: 0.7em;
         padding-top: 1.5em;
 
     }
-
-    
-
     .card__productos-inicio {
         display: block;
         position: relative;
@@ -225,7 +224,6 @@ padding-bottom: 0.7em;
 
 
          & .titulo__barra-lateral{
-            font-family: Georgia, 'Times New Roman', Times, serif;
 
              background-color:  #e2dede7c;;
              border: 3px solid #ddd;
@@ -253,14 +251,9 @@ padding-bottom: 0.7em;
         &:hover{
             color: rgb(18, 18, 228);  }
     }
-
-
-//     .img__productos-inicio .bañera-mascota:hover{
-// background-image: url(..//../img/img__index/img__productos-inicio/bañera_mascota-hover.jpg);    }
     
 
     //   finn barra lateral
-
 
 //tarjeta de productos 
 .producto__inicio{
@@ -271,9 +264,11 @@ padding-bottom: 1em;
 .description__producto-inicio{
     font-size: 1rem;
 }
-
+.precio__card-inicio{
+font-size: 1.3rem; /* Ajusta según sea necesario */
+font-weight: bold; /* Resalta el precio */
+}
 //tarjeta de productos 
-
 
 //btn carrito hover
 .btn__carrito{
@@ -293,6 +288,64 @@ padding-bottom: 1em;
 }
 // fiiin btn carrito hover
 
+
+
+// ejemplo barra lateral
+
+.img__productos-barra{
+    width: 100%;
+    height: 6em;
+
+    & img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.producto-7:hover{
+    background-image: url(..//..//img/img__index/img__productos-inicio/bandejas-prod6.jpeg);
+    .bandejas-prod6{opacity: 0;}
+
+    @include card__productos-inicio
+}
+.precio__card-barra{
+    display: flex;
+    justify-content: center;
+   font-family: 'Montserrat', sans-serif;
+font-size: 1.2rem; /* Ajusta según sea necesario */
+font-weight: bold; /* Resalta el precio */
+
+
+       & p{
+        margin-bottom: 0em;} 
+    
+}
+.cuotas__productos-barra{
+color: rgb(25, 150, 67);
+font-size: 1rem;
+cursor: pointer;
+}
+.descripcion-resaltada{
+    font-weight: 600; /* Resalta el precio */
+    color: rgb(19, 156, 65);    font-size: 1rem;
+}
+.visa-master{
+    width: 7.5em;
+    height: auto;
+& .img__visa-master{
+width: 100%;
+}
+}
+
+.producto-8:hover{
+    background-image: url(..//..//img/img__index/img__productos-inicio/prod-8-hover.jpg);
+    .bandejas-prod6{opacity: 0;}
+
+    @include card__productos-inicio
+}
+
+
+// ejemplo barra lateral
 
 
 

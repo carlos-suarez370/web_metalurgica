@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+p {
+  margin-bottom: 0%;
+}
+
 ul,
 ol {
   list-style: none;
@@ -32,6 +36,8 @@ a {
     display: none;
   }
   .titulo__main {
+    background-color: rgba(180, 180, 180, 0.1647058824);
+    border: 1px solid #ddd;
     display: flex;
     justify-content: center;
     padding-top: 0.5em;
@@ -197,7 +203,6 @@ a {
     margin-bottom: 1em;
   }
   .card__productos-inicio .titulo__barra-lateral {
-    font-family: Georgia, "Times New Roman", Times, serif;
     background-color: rgba(226, 222, 222, 0.4862745098);
     border: 3px solid #ddd;
     border-radius: 7px;
@@ -229,6 +234,10 @@ a {
   .description__producto-inicio {
     font-size: 1rem;
   }
+  .precio__card-inicio {
+    font-size: 1.3rem; /* Ajusta según sea necesario */
+    font-weight: bold; /* Resalta el precio */
+  }
   .btn__carrito {
     width: 11.3em;
     display: flex;
@@ -241,6 +250,59 @@ a {
   }
   .btn__carrito span {
     font-size: 1rem;
+  }
+  .img__productos-barra {
+    width: 100%;
+    height: 6em;
+  }
+  .img__productos-barra img {
+    width: 100%;
+    height: 100%;
+  }
+  .producto-7:hover {
+    background-image: url(..//..//img/img__index/img__productos-inicio/bandejas-prod6.jpeg);
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  }
+  .producto-7:hover .bandejas-prod6 {
+    opacity: 0;
+  }
+  .precio__card-barra {
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem; /* Ajusta según sea necesario */
+    font-weight: bold; /* Resalta el precio */
+  }
+  .precio__card-barra p {
+    margin-bottom: 0em;
+  }
+  .cuotas__productos-barra {
+    color: rgb(25, 150, 67);
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .descripcion-resaltada {
+    font-weight: 600; /* Resalta el precio */
+    color: rgb(19, 156, 65);
+    font-size: 1rem;
+  }
+  .visa-master {
+    width: 7.5em;
+    height: auto;
+  }
+  .visa-master .img__visa-master {
+    width: 100%;
+  }
+  .producto-8:hover {
+    background-image: url(..//..//img/img__index/img__productos-inicio/prod-8-hover.jpg);
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  }
+  .producto-8:hover .bandejas-prod6 {
+    opacity: 0;
   }
 }
 /* ----------------FIN PANTALLA MOVIL 1200px---------- */
@@ -635,7 +697,7 @@ a {
     gap: 1em;
   }
   .navbar-expand-lg .navbar-nav :hover {
-    background-color: rgb(179, 72, 72);
+    background-color: rgba(179, 72, 72, 0.623);
     text-decoration: none;
     transition: background-color 1s ease, color 1s ease;
     border-radius: 6px;
@@ -704,7 +766,7 @@ a {
     gap: 1.6em;
   }
   .navbar-expand-lg .navbar-nav :hover {
-    background-color: rgb(179, 72, 72);
+    background-color: rgba(179, 72, 72, 0.623);
     text-decoration: none;
     transition: background-color 1s ease, color 1s ease;
     border-radius: 6px;
@@ -713,7 +775,7 @@ a {
     text-decoration: none;
     transition: background-color 1s ease, color 1s ease;
     border-radius: 6px;
-    background-color: rgb(179, 72, 72);
+    background-color: rgba(179, 72, 72, 0.623);
     font-size: 1.2em;
   }
   /* ---------FIN  barra de navegacion------------- */
@@ -853,7 +915,7 @@ a {
   /* Iconos de corazón */
   .container__carrito .icono-hover {
     font-size: 18px;
-    color: rgb(216, 63, 63);
+    color: rgba(223, 52, 52, 0.753);
     opacity: 0;
     position: absolute;
     transition: opacity 0.5s ease, transform 0.5s ease;
@@ -886,11 +948,11 @@ a {
   .icono-hover {
     display: block;
     padding: 0.35em;
-    border: 1px solid rgb(216, 63, 63);
+    border: 1px solid rgba(223, 52, 52, 0.753);
     border-radius: 7px;
   }
   .icono-hover:hover {
-    background-color: rgb(216, 63, 63);
+    background-color: rgba(223, 52, 52, 0.753);
   }
 }
 /* ----------------PANTALLA MOVIL 350px---------- */
